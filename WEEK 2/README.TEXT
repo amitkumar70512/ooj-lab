@@ -1,0 +1,41 @@
+Practice Programs for OOJ Lab – Week 2
+
+3. Write a C/Java program to accept a number n from the user and print n rows of output
+as given below if n=4.
+1
+2 3
+4 5 6
+7 8 9 10
+
+4. Wriite a C/Java program to accept the CIE marks (Out of 50) and SEE marks (Out of
+100) of a student and print his/her grade. Use if... elseif ladder
+5. Write a C/Java program to print the prime numbers between given two integers
+(inclusive). Accept these two integers from the user.
+6. Write a C/Java program which prints the area and volume of any one of the given shapes
+given below. Accept the choice of the shape, appropriate inputs from the user, calculate
+and display the area and the volume of the same. Repeat this with different shapes till
+the user wishes to stop.
+Cylinder: Area : A=2πrh+2πr2
+
+Volume: V=πr2
+h
+
+Cone: Area: A=πr(r+ √(h
+2+r2
+)) Volume: V= πr2
+h/3
+Sphere: Area: A= 4πr2 Volume: V= (4/3) πr3
+
+7. Write a C program to count the number of students registered for three elective courses.
+Accept the names of n students, their choice of the elective (Say, the electives courses
+offered are Internet of Things, Advanced Java and J2EE and Advanced Data
+Structures).
+Include the following operations:
+1. Accept say x from the user. Display the names of the students who have
+opted for elective x
+
+2. Count and display the total number of students present in each elective.
+3. If count is less than 30, inform that the course will not be floated and ask
+the students who have opted the course to reselect their electives from the
+other two. Count and display the counts again.
+4. Display the name of the students in each elective.
