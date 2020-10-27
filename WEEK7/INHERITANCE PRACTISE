@@ -1,0 +1,19 @@
+Extra Programs – Week 7 [INHERITANCE PRACTICE]
+
+
+
+1. Develop a Java program to create a class Student whose variables are usn, name and sem.
+Derive a class Test from Student to include an array of cie marks of each course and their
+corresponding credits in another array. Derive a class Exam from Test which includes an
+array of see marks. Derive a class Result which calculates the grade for each course and the
+SGPA. Create n student objects and displays all the above details.
+
+
+
+
+2. Develop a Java program to create a class PLAYER with member variables name,
+matches_played and average. This class has an abstract method cal_average(String,int,int).
+Derive two classes BATSMAN and BOWLER from PLAYER. Class BATSMAN has a
+member variable runs_scored. Class BOWLER has a member variable runs_given. Create m
+BATSMAN objects and n BOWLER objects. Calculate and display the average runs scored
+by each BATSMAN and average runs given by each BOWLER.
