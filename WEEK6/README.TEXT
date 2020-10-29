@@ -1,0 +1,17 @@
+Week 6:
+Extra Programs:
+1. Develop a Java program to find the transpose of a given matrix of order MXN.
+2. Develop a Java program which has the (only) class CircleDemo that has members-radius, area and perimeter. Include methods to do the following.
+a. accept the radius from the user
+b. find the area of the circle
+c. find the perimeter of the circle
+d. Display all the details
+3. Develop a Java program to create a class Actor with id, name, no_of_movies, no_of_years_exp. Calculate the average_performance for each of the actor and print the name of the actor with highest average.
+4. Develop a Java program to accept the values of a double array through command line. Display the sorted array.
+5. Design a Java program to accept a double array- Full. create two more arrays pos, neg. Check every element of Full array and push the positive
+numbers to pos array and negative numbers to neg. Count the number of
+positives, negatives and zeros and display.
+6. Design a Java program to accept a string. Count and display the number of
+vowels, consonants and spaces in the string
+7. Design a Menu driven Java program to create a class Operators which has members- operand1, operand2, result1, result2.
+The program should display the categories of operators like Arithmetic, Logical, Relational and Arithmetic assignment. Include four methods that calculates and displays the results of any two operations of its kind. Pass the operands as parameters to the method, calculate the result and update the members. Loop the choice this the user wishes to stop.
