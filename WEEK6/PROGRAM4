@@ -1,0 +1,45 @@
+//Develop a Java program to accept the values of a double array through command line. Display the sorted array.
+
+import java.util.Scanner;
+class sortedcmdline{
+public static void main(String arr[]){
+
+int length=arr.length;
+	System.out.println("The aber of command-line arguments are:"+length);
+
+	System.out.println("The Command line arguments are::");
+		for (int i=0;i<length;i++){
+		System.out.println(arr[i]);
+		}
+double a[]=  new double[length];
+	for(int j=0;j<length;j++){
+     a[j]=Double.parseDouble(arr[j]);
+	}
+	System.out.println("The elements in an array");
+		for(int k=0;k<length;k++){
+		System.out.print(a[k]+" ");
+		}
+		//for sorting
+		double temp=0;
+	  for (int i = 0; i <length; i++) 
+        {
+            for (int j = i + 1; j <length; j++) { 
+                if (a[i] > a[j]) 
+                {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+	System.out.println("Array Elements in Ascending Order: ");
+        for (int i = 0; i < length-1; i++) 
+        {
+            System.out.print(a[i] + ", ");
+        }
+        System.out.print(a[length-1]);
+
+}
+	
+}
+
