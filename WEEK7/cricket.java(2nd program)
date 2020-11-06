@@ -4,19 +4,22 @@ Derive two classes BATSMAN and BOWLER from PLAYER. Class BATSMAN has a
 member variable runs_scored. Class BOWLER has a member variable runs_given. Create m
 BATSMAN objects and n BOWLER objects. Calculate and display the average runs scored
 by each BATSMAN and average runs given by each BOWLER.*/
-import java.util.Scanner;
-class Player{
-Scanner sc =new Scanner (System.in);
- static String name="" ;
 
+
+
+
+
+import java.util.Scanner;
+abstract class Player{
+Scanner sc =new Scanner (System.in);
+ static String name=" " ;
 
 static int matches_played=0;
 
 static double average=0.0;
 
-/*void cal_average(String,int,int){
+public abstract double cal_average(String name,int n,int runs);
 
-}*/
 }
 class batsman extends Player{
 		static int runs_scored =0;
@@ -26,7 +29,7 @@ class batsman extends Player{
 			for(int i=0;i<m;i++){
 			System.out.println("Enter the name of Player"+(i+1));
 			s[i].name=sc.next();
-			System.out.println("Give the no of matches played by <"+s[i].name+">"+" " );
+			System.out.println("Give the no of matches played by <" + s[i].name + ">  " );
 			s[i].matches_played=sc.nextInt();
 			System.out.println("Give the runs scored  by <"+s[i].name+">"+" "+ "in " + s[i].matches_played+ " " +"matches" );
 			s[i].runs_scored=sc.nextInt();
@@ -40,8 +43,15 @@ class batsman extends Player{
 				System.out.println("Player_name:: "+s[k].name);
 				System.out.println("Matches-played::"+s[k].matches_played);
 				System.out.println("Run-scored::"+ s[k].runs_scored);
+				System.out.println("Average-run-scored ::"+cal_average(s[k].name,s[k].matches_played,s[k].runs_scored));
 								}
 					}
+					
+				public double  cal_average(String name,int n,int runs){
+				average=runs/n;
+				
+				return average;
+				}				
 }
 class bowler extends Player {
 static int runs_given=0;
@@ -68,7 +78,13 @@ static int runs_given=0;
 						System.out.println("Player_name:: "+g[j].name);
 						System.out.println("Matches-played::"+g[j].matches_played);
 						System.out.println("Run-given::"+ g[j].runs_given);
+						System.out.println("Average-run-given::"+cal_average(g[j].name,g[j].matches_played,g[j].runs_given));
 						}
+				}
+				public double cal_average(String name,int n,int runs){
+				average=runs/n;
+				
+				return average;
 				}
 	 }
 
@@ -88,10 +104,8 @@ b.getdata1(q);
 
 System.out.println("--------overall Stat-------");
 a.display(p);
+
 b.display1(q);
-
-
-
 
 }
 }
